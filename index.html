@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Flying Bee | HiveWorks</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Rafique Mahroof" />
+      <meta name="description" content="Use Makey Makey to control the Bee" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+      <link href="css/reset.css" rel="stylesheet" type="text/css">
+      <link href="css/main.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+   <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3DDXG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3DDXG');</script>
+<!-- End Google Tag Manager -->
+
+      <div id="gamecontainer">
+         <div id="gamescreen">
+            <!-- Sky with animated background -->
+            <div id="background" class="animated">
+               <div id="flyarea">
+                  <!-- the top of the pipes , put something to make it look good  -->
+                  <div id="ceiling" class="animated"></div>
+                  <!-- This is the flying and pipe area container -->
+                  <div id="player" class="orange animated"></div>
+
+                  <div id="bigscore"></div>
+                  <!-- The Welcome screen - Flappy Orange - touch to continue  -->
+                  <div id="splash"></div>
+                  <!-- Game over screen with score -->
+                  <div id="scoreboard">
+                     <div id="scoreboard-container">
+                        <div id="medal"></div>
+                        <div id="currentscore"></div>
+                        <div id="highscore"></div>
+                        <div id="replay">
+                           <!-- Replay icon -->
+                           <img src="assets/replay.png" alt="replay">
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- barriers/pipes will go here! -->
+               </div>
+            </div>
+            <!-- The bottom ground area -->
+            <div id="ground" class="animated"><div id="debug"></div></div>
+         </div>
+      </div>
+
+      <div id="footer">
+         <a href="http://hiveworks.co.uk">Created at HiveWorks</a>
+      </div>
+      <div class="boundingbox" id="playerbox"></div>
+      <div class="boundingbox" id="pipebox"></div>
+
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <script src="js/jquery.transit.min.js" type="text/javascript"></script>
+      <script src="js/buzz.min.js" type="text/javascript"></script>
+      <script src="js/main.js" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49353368-1', 'rafgeekee.com');
+  ga('send', 'pageview');
+
+</script>
+   </body>
+</html>
